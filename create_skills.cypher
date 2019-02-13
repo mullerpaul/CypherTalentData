@@ -1,10 +1,14 @@
-// I pulled this list from https://www.thebalancecareers.com/list-of-information-technology-it-skills-2062410
-// Its by no means complete and it has a lot of things I consider to be duplicates.
+// I pulled these lists from the following sites:
+// https://www.thebalancecareers.com/list-of-information-technology-it-skills-2062410
+// https://www.thebalancecareers.com/list-of-accounting-skills-2062348
+// They are by no means complete and they have a lot of things I consider to be duplicates.
 
 // However, since we are dealing with millions of people using natural language to describe things, I don't think 
 // a perfectly curated, hierarchical, logical taxonomy of skills exists.  And if it DID exist, 80% of the people using 
 // it would think it was incomplete, organized incorrectly, or would just plain hate it!
 
+
+// IT skills
 CREATE
 (:Skill { name: "Agile Development" } ),
 (:Skill { name: "Agile Project Methodology" } ),
@@ -211,3 +215,88 @@ CREATE
 (:Skill { name: "Wireframes" } ),
 (:Skill { name: "Work Independently" } )
 
+// Accounting skills
+CREATE
+(:Skill { name: "Account Analysis" } ),
+(:Skill { name: "Account Reconciliation" } ),
+(:Skill { name: "Accounting Information Systems" } ),
+(:Skill { name: "Accounting Software" } ),
+(:Skill { name: "Accounts Payable" } ),
+(:Skill { name: "Accounting Processes" } ),
+(:Skill { name: "Accounting Principles" } ),
+(:Skill { name: "Accounts Receivable" } ),
+(:Skill { name: "ADP" } ),
+(:Skill { name: "Aging Reports" } ),
+(:Skill { name: "Annual Reports" } ),
+(:Skill { name: "Audits" } ),
+(:Skill { name: "Audit Schedules" } ),
+(:Skill { name: "Balance Sheets" } ),
+(:Skill { name: "Banking" } ),
+(:Skill { name: "Bank Deposits" } ),
+(:Skill { name: "Bank Reconciliations" } ),
+(:Skill { name: "Bill Payment" } ),
+(:Skill { name: "Bookkeeping" } ),
+(:Skill { name: "Budgets" } ),
+(:Skill { name: "Cash Receipts" } ),
+(:Skill { name: "Certified Public Accountant (CPA)" } ),
+(:Skill { name: "Chart of Accounts" } ),
+(:Skill { name: "Check Runs" } ),
+(:Skill { name: "Corporate Tax" } ),
+(:Skill { name: "Cost Accounting" } ),
+(:Skill { name: "Credits" } ),
+(:Skill { name: "Crystal Reports" } ),
+(:Skill { name: "Debt Management" } ),
+(:Skill { name: "Depreciation" } ),
+(:Skill { name: "Federal Tax Law" } ),
+(:Skill { name: "Financial Analysis" } ),
+(:Skill { name: "Financial Reporting" } ),
+(:Skill { name: "Financial Software" } ),
+(:Skill { name: "Financial Statements" } ),
+(:Skill { name: "Financial Statement Analysis" } ),
+(:Skill { name: "Fixed Assets" } ),
+(:Skill { name: "Forecasts" } ),
+(:Skill { name: "Forecasting" } ),
+(:Skill { name: "Full Charge Bookkeeping" } ),
+(:Skill { name: "Full Cycle Month-End Close" } ),
+(:Skill { name: "Full Cycle Year-end Close" } ),
+(:Skill { name: "GAAP" } ),
+(:Skill { name: "General Ledger" } ),
+(:Skill { name: "Great Plains Accounting" } ),
+(:Skill { name: "Great Plains Dynamics" } ),
+(:Skill { name: "Income Tax" } ),
+(:Skill { name: "Interest Calculations" } ),
+(:Skill { name: "Invoices" } ),
+(:Skill { name: "Job Cost Reports" } ),
+(:Skill { name: "Journal Entry Preparation/Posting" } ),
+(:Skill { name: "Monthly Closes" } ),
+(:Skill { name: "Oracle" } ),
+(:Skill { name: "Organization" } ),
+(:Skill { name: "Paychex" } ),
+(:Skill { name: "Payroll" } ),
+(:Skill { name: "Payroll Liabilities" } ),
+(:Skill { name: "Payroll Taxes" } ),
+(:Skill { name: "Peachtree" } ),
+(:Skill { name: "Personal Tax" } ),
+(:Skill { name: "Petty Cash" } ),
+(:Skill { name: "Platinum" } ),
+(:Skill { name: "Prepaid Income/Expenses" } ),
+(:Skill { name: "Profit and Loss" } ),
+(:Skill { name: "Reconciliation" } ),
+(:Skill { name: "Regulatory Filings" } ),
+(:Skill { name: "Reporting" } ),
+(:Skill { name: "Revenue Projections" } ),
+(:Skill { name: "Revenue Recognition" } ),
+(:Skill { name: "Sales Receipts" } ),
+(:Skill { name: "SAP" } ),
+(:Skill { name: "State Tax Law" } ),
+(:Skill { name: "Tax Analysis" } ),
+(:Skill { name: "Tax Compliance" } ),
+(:Skill { name: "Tax Filing" } ),
+(:Skill { name: "Tax Law" } ),
+(:Skill { name: "Tax Liabilities" } ),
+(:Skill { name: "Tax Reporting" } ),
+(:Skill { name: "Tax Returns" } ),
+(:Skill { name: "Tax Software" } ),
+(:Skill { name: "Trial Balance" } ),
+(:Skill { name: "Vouchers" } ),
+(:Skill { name: "Year-End Reporting" } )
