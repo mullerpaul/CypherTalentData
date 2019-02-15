@@ -1,9 +1,9 @@
 // REQUISITIONS
 
 // We MUST capture:
-//   job title/role
+//   job title/role  -- To model as attribute or relationship?  
 //   the skills required
-//   the owner of the required (who to contact)
+//   the owner of the required (who to contact) -- To model as attribute or relationship?  
 // We CAN capture:
 //   location
 //   salary
@@ -89,6 +89,53 @@ MERGE (s4:Skill { skill: "Detail Oriented" } )
 MERGE (s5:Skill { skill: "Analytical" } )
 MERGE (s6:Skill { skill: "Good communication skills" } )
 MERGE (s7:Skill { skill: "git" } )
+MERGE (o)-[:Created]->(j)
+MERGE (j)-[:HasTitle]->(t)
+MERGE (j)-[:Requires]->(s1)
+MERGE (j)-[:Requires]->(s2)
+MERGE (j)-[:Requires]->(s3)
+MERGE (j)-[:Requires]->(s4)
+MERGE (j)-[:Requires]->(s5)
+MERGE (j)-[:Requires]->(s6)
+MERGE (j)-[:Requires]->(s7)
+
+
+// https://www.dice.com/jobs/detail/Senior-.Net-Developer-Charles-Schwab-%26-Co.%2C-Inc.-Lone-Tree-CO-80112/10228622/20181011%26%23456516
+// slightly modified to test data loads
+MERGE (j:Requisition { id: 104 } )
+MERGE (t:JobTitle { title: "Senior .Net Developer" } )
+//MERGE (o:Person { name: "Allison McKenzie" } )
+MERGE (s1:Skill { skill: "C#" } )
+MERGE (s2:Skill { skill: "C++" } )
+MERGE (s4:Skill { skill: "Oracle" } )
+MERGE (s5:Skill { skill: "MongoDB" } )
+MERGE (s6:Skill { skill: "Good communication skills" } )
+MERGE (s7:Skill { skill: "git" } )
+MERGE (s8:Skill { skill: "mentoring" } )
+MERGE (s9:Skill { skill: "Agile" } )
+//MERGE (o)-[:Created]->(j)
+MERGE (j)-[:HasTitle]->(t)
+MERGE (j)-[:Requires]->(s1)
+MERGE (j)-[:Requires]->(s2)
+MERGE (j)-[:Requires]->(s4)
+MERGE (j)-[:Requires]->(s5)
+MERGE (j)-[:Requires]->(s6)
+MERGE (j)-[:Requires]->(s7)
+MERGE (j)-[:Requires]->(s8)
+MERGE (j)-[:Requires]->(s9)
+
+// https://www.dice.com/jobs/detail/Sr.-.NET-Developer-VISION-INFOTECH-INC.-Broomfield-CO-80020/10120623/2019%26%23451097
+// slightly modified to test data loads
+MERGE (j:Requisition { id: 105 } )
+MERGE (t:JobTitle { title: "Senior .Net Developer" } )
+MERGE (o:Person { name: "Abhay Gupta" } )
+MERGE (s1:Skill { skill: "C#" } )
+MERGE (s2:Skill { skill: "T-SQL" } )
+MERGE (s3:Skill { skill: ".Net Core 2.1" } )
+MERGE (s4:Skill { skill: "ReactJS" } )
+MERGE (s5:Skill { skill: "Bootstrap" } )
+MERGE (s6:Skill { skill: "JQuery" } )
+MERGE (s7:Skill { skill: "ASP.NET" } )
 MERGE (o)-[:Created]->(j)
 MERGE (j)-[:HasTitle]->(t)
 MERGE (j)-[:Requires]->(s1)
